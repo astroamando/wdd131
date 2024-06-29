@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --cor-principal: #3498db;
+  --cor-secundaria: #2ecc71;
+  --padding-padrao: 10px;
+  --fonte-principal: "Roboto", sans-serif;
+  --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--cor-principal);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav a:hover, nav a:focus {
+  background-color: white;
+  color: var(--cor-principal);
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  /* max-width: 1200px; */
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card .card-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+
+.card .card-intro-2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+
+hr{
+  margin: 20px 0;
+
+}
+/* .card .card-intro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 30px;
+}
+
+.card .card-intro-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 10px;
+} */
+
+.card img {
+  max-width: 150px;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
