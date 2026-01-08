@@ -71,7 +71,33 @@ main h1 {
 .card {
     background: var(--accent2);
     padding: 1rem;
+    border: 1px solid var(--text);
     border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    color: var(--text);
+    text-align: center;
+    padding: 0.75rem;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+    border-radius: 4px;
 }
 
 footer {
