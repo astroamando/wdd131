@@ -81,3 +81,7 @@ footer {
     background-color: var(--accent2);
     color: var(--text);
 }
+
+footer p {
+    font-size: 0.9rem;
+}
