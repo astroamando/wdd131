@@ -95,6 +95,10 @@ main h2 {
     padding-bottom: 10px;
 }
 
+#temple-div {
+    display: grid;
+}
+
 footer {
     background-color: #1a2c42;
     color: #fff;
