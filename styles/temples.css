@@ -97,6 +97,21 @@ main h2 {
 
 #temple-div {
     display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+}
+
+#temple-div figure {
+    margin: 0;
+    max-width: 400px;
+    width: 100%;
+}
+
+#temple-div img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 footer {
