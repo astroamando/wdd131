@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WDD 131 - Place page featuring Kyoto, Japan" />
+  <meta name="author" content="Amando Santos" />
+  <title>Kyoto, Japan | WDD 131 Place Page</title>
+
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <h1>Kyoto, Japan</h1>
+  </header>
+  <main>
+    <section class="hero" aria-label="Hero image of Kyoto">
+      <picture>
+        <source srcset="images/kyoto-large.webp" media="(min-width: 900px)" type="image/webp">
+        <img
+          src="images/kyoto-small.jpg"
+          alt="A scenic view of Kyoto with temples and mountains"
+          width="1200"
+          height="700"
+          loading="lazy"
+        />
+      </picture>
+    </section>
+    <section class="content">
+      <section class="card" aria-labelledby="data-heading">
+        <h2 id="data-heading">Data</h2>
+        <dl class="data-list">
+          <div><dt>Country</dt><dd>Japan</dd></div>
+          <div><dt>Region</dt><dd>Kansai</dd></div>
+          <div><dt>Population</dt><dd>~1.4 million (city)</dd></div>
+          <div><dt>Language</dt><dd>Japanese</dd></div>
+          <div><dt>Currency</dt><dd>Japanese Yen (JPY)</dd></div>
+          <div><dt>Time Zone</dt><dd>Japan Standard Time (UTC+9)</dd></div>
+          <div><dt>Highlights</dt><dd>Temples, gardens, traditional neighborhoods</dd></div>
+        </dl>
+      </section>
+      <section class="card weather" aria-labelledby="weather-heading">
+        <h2 id="weather-heading">Weather</h2>
+        <div class="weather-icon" aria-hidden="true">
+          <img src="images/weather-partly-cloudy.svg" alt="" width="64" height="64" loading="lazy" />
+        </div>
+
+        <dl class="data-list">
+          <div><dt>Temperature</dt><dd><span id="temp">45</span>°F</dd></div>
+          <div><dt>Conditions</dt><dd>Partly Cloudy</dd></div>
+          <div><dt>Wind</dt><dd><span id="wind">10</span> mph</dd></div>
+          <div><dt>Wind Chill</dt><dd><span id="windchill">—</span></dd></div>
+        </dl>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      © <span id="year"></span> • Your Name • WDD 131
+    </p>
+    <p>
+      Last Modified: <span id="lastModified"></span>
+    </p>
+  </footer>
+</body>
+</html>
