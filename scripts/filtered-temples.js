@@ -69,7 +69,7 @@ const temples = [
     dedicated: "March 10, 2019",
     area: 40000,
     imageUrl:
-    ".images/Rome-Temple.jpg"
+    "./images/Rome-Temple.jpg"
   },
   {
     templeName: "St. George Utah",
