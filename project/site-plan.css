@@ -1,9 +1,9 @@
 :root {
-    /* Definindo as variáveis com as cores*/
-    --primary-color: #2C3E50;   /* Azul Escuro */
-    --secondary-color: #E74C3C; /* Vermelho/Coral */
-    --accent-color: #ECF0F1;    /* Cinza Claro */
-    --bg-color: #FFFFFF;        /* Branco */
+    /* variables */
+    --primary-color: #2C3E50;
+    --secondary-color: #E74C3C;
+    --accent-color: #ECF0F1;
+    --bg-color: #FFFFFF;
     
     --heading-font: 'Montserrat', sans-serif;
     --body-font: 'Roboto', sans-serif;
@@ -37,7 +37,7 @@ hr {
     margin: 40px 0;
 }
 
-/* Estilo para a Tabela de Cores */
+/* table colors */
 .colors {
     width: 100%;
     margin-bottom: 20px;
@@ -46,7 +46,7 @@ hr {
 
 .colors th {
     height: 30px;
-    color: white; /* Texto branco para contraste nos cabeçalhos */
+    color: white;
     font-family: var(--heading-font);
 }
 
@@ -57,7 +57,7 @@ hr {
     border: 1px solid #ddd;
 }
 
-/* Aplicando as cores REAIS na tabela */
+/* Tables */
 .primary { background-color: var(--primary-color); }
 .secondary { background-color: var(--secondary-color); }
 .accent1 { background-color: var(--accent-color); color: #333 !important; } /* Texto escuro no fundo claro */
@@ -67,7 +67,7 @@ hr {
 .secondary-text { color: var(--secondary-color); }
 .accent1-text { color: #555; }
 
-/* Estilo para exemplos de Fonte */
+/* Font */
 .heading-font {
     font-family: var(--heading-font);
     font-size: 1.5em;
@@ -79,7 +79,7 @@ hr {
     font-size: 1.1em;
 }
 
-/* Estilo para os Wireframes */
+/*Wireframes */
 .wireframes {
     display: flex;
     flex-wrap: wrap;
