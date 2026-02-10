@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Amando Evangelista Santos Filho">
+    <meta name="description" content="page for review feedback after the form is submitted">
     <title>Review Confirmation</title>
     <link rel="stylesheet" href="form.css">
     </head>
@@ -27,17 +29,13 @@
     </footer>
 
     <script>
-        // Lógica do Contador (Review Counter)
-        // 1. Pega o valor atual do localStorage (se não existir, é 0)
+        
         let numReviews = Number(window.localStorage.getItem("numReviews-ls")) || 0;
 
-        // 2. Aumenta 1 pois o usuário acabou de enviar
         numReviews++;
-
-        // 3. Salva o novo valor no localStorage
+        
         window.localStorage.setItem("numReviews-ls", numReviews);
 
-        // 4. Mostra na tela
         document.getElementById("reviewCounter").textContent = numReviews;
     </script>
 </body>

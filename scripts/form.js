@@ -1,4 +1,4 @@
-// Array de produtos fornecido na tarefa
+// product array
 const products = [
   {
     id: "fc-1888",
@@ -27,18 +27,18 @@ const products = [
   }
 ];
 
-// 1. Seleciona o elemento HTML onde as opções vão aparecer
+
 const selectElement = document.getElementById("productName");
 
-// 2. Loop através do array para criar as opções
+
 products.forEach(product => {
-    // Cria um novo elemento <option>
+   
     let newOption = document.createElement("option");
     
-    // Define o valor (id) e o texto visível (name)
-    newOption.value = product.id;
-    newOption.textContent = product.name; // Usei name ao invés de id para ficar legível
     
-    // Adiciona a opção criada dentro do select
+    newOption.value = product.id;
+    newOption.textContent = product.name;
+    
+    
     selectElement.appendChild(newOption);
 });
