@@ -52,15 +52,24 @@
                     <input type="date" id="installDate" name="installDate" required>
                 </div>
 
-                <div class="form-item">
-                    <label>Which features did you find useful?</label>
-                    <div class="checkbox-group">
-                        <label><input type="checkbox" name="features" value="durability"> Durability</label>
-                        <label><input type="checkbox" name="features" value="design"> Ease of Use</label>
-                        <label><input type="checkbox" name="features" value="performance"> Performance</label>
-                        <label><input type="checkbox" name="features" value="design"> Design</label>
+                <fieldset>
+                    <div class="form-item">
+                        <legend>Which features did you find useful?</legend>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="checkbox1" name="features" value="durability">
+                            <label for="checkbox1">Durability</label>
+
+                            <input type="checkbox" id="checkbox2" name="features" value="ease">
+                            <label for="checkbox2">Ease of Use</label>
+
+                            <input type="checkbox" id="checkbox3" name="features" value="performance">
+                            <label for="checkbox3">Performance</label>
+
+                            <input type="checkbox" id="checkbox4" name="features" value="design">
+                            <label for="checkbox4">Design</label>
+                        </div>
                     </div>
-                </div>
+                </fieldset>
 
                 <div class="form-item">
                     <label for="writtenReview">Written Review (Optional):</label>
@@ -78,7 +87,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Product Review Form - Amando Evangelista Santos Filho</p>
+        <p>&copy; 2026 Product Review Form - Amando Evangelista Santos Filho</p>
     </footer>
 </body>
 </html>
