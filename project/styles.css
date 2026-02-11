@@ -22,6 +22,7 @@ header {
     color: white;
     padding: 1rem;
     text-align: center;
+    border-bottom: 4px solid var(--secondary);
 }
 
 h1, h2, h3 {
@@ -44,8 +45,11 @@ h1, h2, h3 {
 }
 
 .navigation a:hover, .navigation a.active {
-    color: var(--secondary);
-    border-bottom: 2px solid var(--secondary);
+    background-color: var(--light);
+    color: var(--primary);
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 2px solid var(--secondary);
 }
 
 #menu-button { display: none; }
@@ -79,14 +83,20 @@ main {
     padding: 10px 20px;
     font-size: 1.2rem;
     cursor: pointer;
-    background-color: var(--secondary);
-    color: white;
-    border: none;
+    background-color: var(--light);
+    color: var(--primary);
+    border: 2px solid var(--secondary);
     border-radius: 5px;
     margin: 5px;
 }
 
-.controls button:hover { opacity: 0.9; }
+.controls button:hover { 
+    opacity: 0.9;
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
 
 /* Form & Tasks */
 #task-form {
